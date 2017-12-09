@@ -3,7 +3,20 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. It i
 
 ## Comments
 ---
-Single line comments start with `//`. For multi-line commands, you use `/* ... */` or `<!-- json -->` 
+Single line comments start with `//json`. For multi-line commands, you use `/* json */` or `<!-- json -->` 
 
-```js
+## Json Syntax
+
+### Json data types:
+* a string
+* a number
+* an object (JSON object)
+* an array
+* a boolean
+* null
+
+### Json number types:
+* Integer
+* Fraction
+* Exponent
 
