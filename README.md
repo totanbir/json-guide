@@ -74,3 +74,40 @@ or
 obj = { "name":"rafi", "age":10, "class":null, "year": true };
 myobj= obj["name"];
 ```
+### Json Looping Object:
+```js
+loopobj = { "name":"rafi", "age":10, "class":null, "year": true };
+for (x in loopobj) {
+    document.getElementById("demo").innerHTML += x;
+}
+```
+or
+```js
+loopobj = { "name":"rafi", "age":10, "class":null, "year": true };
+for (x in loopobj) {
+    document.getElementById("demo").innerHTML += loopobj[x];
+}
+```
+### Json Nested Objects:
+```js
+Nesobj = {
+    "name":"nahid",
+    "age":30,
+    "skill": {
+        "skill1":"laravel",
+        "skill2":"php",
+        "skill3":"js",
+        "skill4":"vue.js"
+    }
+ }
+ ```
+Access nested Json objects
+```js
+ x = nesobj.skill.skill3;
+```
+or
+```js
+x = nesobj.skill["skill3"];
+```
+## Json Arrays
+---
