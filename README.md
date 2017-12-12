@@ -137,3 +137,16 @@ for (i = 0; i < arrobj.skill.length; i++) {
 }
 ```
 ### Json Nested arrays:
+```js
+nesarr = {
+    "name":"Rafi",
+    "age":10,
+    "year":2017,
+    "computer": [
+        { "name":"MacBook Pro ", "models":[ "MacBookPro14,1", "MacBookPro14,2", "MacBookPro14,3" ] },
+        { "name":"dell", "models":[ "XPS 13", "XPS 15", "XPS 13 2-in-1" ] },
+        { "name":"fujitsu", "models":[ "LH-532", "LH-531" ] }
+    ]
+ }
+ ```
+ 
