@@ -101,7 +101,7 @@ Nesobj = {
     }
  }
  ```
-Access nested Json objects
+> Access nested Json objects
 ```js
  x = nesobj.skill.skill3;
 ```
@@ -111,3 +111,29 @@ x = nesobj.skill["skill3"];
 ```
 ## Json Arrays
 ---
+### Arrays in Json Objects:
+```js
+arrobj = {
+"name":"Rafi",
+"phone":01723xxxxxx,
+"address": "Dhaka, Bangladesh",
+"skill":[ "php", "html", "css", "javascript" ]
+}
+```
+> Access Array Values
+```js
+x = arrobj.skill[0];
+```
+### Json Looping array:
+```js
+for (i in arrobj.skill) {
+    x += arrobj.skill[i];
+}
+```
+or
+```js
+for (i = 0; i < arrobj.skill.length; i++) {
+    x += arrobj.skill[i];
+}
+```
+### Json Nested arrays:
