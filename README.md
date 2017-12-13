@@ -149,4 +149,26 @@ nesarr = {
     ]
  }
  ```
- 
+ > Access Nested array Values
+ ```js
+ for (i in nesarr.computer) {
+    x += "<h1>" + nesarr.computer[i].name + "</h1>";
+    for (j in nesarr.computer[i].models) {
+        x += nesarr.computer[i].models[j];
+    }
+}
+```
+### Json Modify array Values:
+```js
+nesarr.computer[1] = "XPS 17"
+```
+### Json Delete array:
+```js
+delete nesarr.computer[1];
+```
+## Json parse
+---
+### Json Parsing
+```js
+'{ "name":"Rafi", "Phone":01723, "city":"Dhaka"}'
+```
