@@ -152,7 +152,7 @@ nesarr = {
  > Access Nested array Values
  ```js
  for (i in nesarr.computer) {
-    x += "<h1>" + nesarr.computer[i].name + "</h1>";
+    x += "<p>" + nesarr.computer[i].name + "</p>";
     for (j in nesarr.computer[i].models) {
         x += nesarr.computer[i].models[j];
     }
@@ -171,4 +171,29 @@ delete nesarr.computer[1];
 ### Json Parsing
 ```js
 '{ "name":"Rafi", "Phone":01723, "city":"Dhaka"}'
+```
+### Use the JavaScript function Json.parse
+```js
+var json = '{"name":"rafi", "result":true,"count":2}',
+obj = JSON.parse(json);
+```
+> Use the JavaScript object
+```js
+<h1 id="demo"></h1> 
+
+<script>
+document.getElementById("demo").innerHTML = json.name + ", " + json.city; 
+</script>
+```
+### get data from the server:
+```js
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = obj.name;
+    }
+};
+xmlhttp.open("GET", "json_demo.txt", true);
+xmlhttp.send();
 ```
