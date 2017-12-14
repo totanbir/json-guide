@@ -197,3 +197,23 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", "json_demo.txt", true);
 xmlhttp.send();
 ```
+## Json stringify
+---
+### Json Stringify with JavaScript Object:
+```js
+var myobj = { "name":"Rafi", "hometown":"Barisal", "currentcity":"Dhaka", "phone":01723****};
+```
+> JavaScript function JSON.stringify, and string data sent to be a server
+```js
+var myJSON = JSON.stringify(myobj);
+document.getElementById("demo").innerHTML = myJSON;
+```
+### Json Stringify date:
+```js
+var myobj = { "name":"Rafi", "date":new Date(), "home":"Barisal" };
+```
+### Json Stringify function:
+```js
+var myobj = { "name":"Rafi", "phone":function () {return 01723***;}, "home":"Barisal" };
+```
+
