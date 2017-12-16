@@ -3,7 +3,7 @@ JSON (JavaScript Object Notation) is a lightweight data-interchange format. It i
 
 ## Comments
 ---
-Single line comments start with `//json`. For multi-line commands `/* json */` or `<!-- json -->` 
+Comments are not Supported in JSON :smiley:
 
 ## Json Syntax
 ---
@@ -216,4 +216,61 @@ var myobj = { "name":"Rafi", "date":new Date(), "home":"Barisal" };
 ```js
 var myobj = { "name":"Rafi", "phone":function () {return 01723***;}, "home":"Barisal" };
 ```
-
+## JSON Schema
+---
+### Building a product schema:
+> JSON data for a product API
+```js
+{
+    "id": 1,
+    "name": "Ace Plus",
+    "price": 12.50,
+    "tags": ["medicine", "drug"]
+}
+```
+> Starting the schema
+```js
+{
+   "$schema": "http://json-schema.org/draft-06/schema#",
+   "title": "Product",
+   "description": "A product from Medicine",
+   "type": "medicine"
+}
+```
+### Defining the properties:
+> what is id?
+```js
+{
+   "$schema": "http://json-schema.org/draft-06/schema#",
+   "title": "Product",
+   "description": "A product from Medicine",
+   "type": "object",
+   "properties": {
+         "id": {
+            "description": "The unique indentifier for a product",
+            "type": "integer"
+         }
+     },
+    "required": ["id"]
+}
+```
+> Is name required?
+```js
+{
+   "$schema": "http://json-schema.org/draft-06/schema#",
+   "title": "Product",
+   "description": "A product from Medicine",
+   "type": "object",
+   "properties": {
+         "id": {
+             "description": "The unique identifier for a product",
+             "type": "integer"
+         },
+         "name": {
+              "description": "Name of the product",
+              "type": "string"
+         },
+         "required": ["id","name"]
+}
+```
+         
