@@ -115,7 +115,7 @@ x = nesobj.skill["skill3"];
 ```js
 arrobj = {
 "name":"Rafi",
-"phone":01723xxxxxx,
+"phone":01723*****,
 "address": "Dhaka, Bangladesh",
 "skill":[ "php", "html", "css", "javascript" ]
 }
