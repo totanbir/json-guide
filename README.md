@@ -273,4 +273,27 @@ var myobj = { "name":"Rafi", "phone":function () {return 01723***;}, "home":"Bar
          "required": ["id","name"]
 }
 ```
-         
+> Can price be 0?
+```js
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product",
+    "description": "A product from Acme's catalog",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "The unique identifier for a product",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the product",
+            "type": "string"
+        },
+        "price": {
+            "type": "number",
+            "exclusiveMinimum": 0
+        }
+    },
+    "required": ["id", "name", "price"]
+}
+```
