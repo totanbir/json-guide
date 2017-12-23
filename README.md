@@ -389,9 +389,9 @@ text = demjson.decode(json)
 print  text
 ```
 ### JSON with Java
+
 > encode
 ```js
-import org.json.simple.JSONObject;
 class JsonEncodeDemo {
 
    public static void main(String[] args){
