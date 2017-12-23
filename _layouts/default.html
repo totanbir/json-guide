@@ -10,6 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3350277075217187",
+          enable_page_level_ads: true
+        });
+    </script>    
     
   </head>
   <body>
@@ -29,8 +36,11 @@
       <!-- Place this tag where you want the button to render. -->
       <a class="github-button" href="https://github.com/totanbir/json-guide/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork totanbir/json-guide on GitHub">Fork</a>      
     </section>
-    {{ content }}
-    <section class="main-content">   
+
+    <section class="main-content">
+      
+      {{ content }}
+
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.title }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
